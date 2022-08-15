@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="bg-dark d-flex align-items-center">
+      <div class="container pt-3 py-5 bg-danger text-white border-4 rounded-3">
+        <div class="nav d-flex justify-content-between">
+          <button type="button" class="btn btn-dark again">Start again</button>
+          <button type="button" class="btn btn-primary instruction">
+            instruction
+          </button>
+        </div>
+        <div class="modal-box d-flex justify-content-center m-auto mb-3 mt-3">
+          <div
+            class="modal-display bg-dark text-center py-3 hidden rounded-pill d-flex flex-column justify-content-center d-none"
+          >
+            <div class="d-flex justify-content-end fw-bolder fs-1 modal-exit">
+              &times
+            </div>
+            <h3>How to play the game</h3>
+            <p>
+              1. Pick a number between 1-20
+            </p>
+            <p>2. Input the number on the box provided</p>
+            <p>3. click on check</p>
+            <h5>
+              Click 'start again to replay or reload your browser to reset the
+              game
+            </h5>
+          </div>
+        </div>
+        <section class="game-section">
+          <h1 class="text-center fw-bolder fs-1">GUESS MY NUMBER</h1>
+          <div class="number-box bg-black m-auto p-3">
+            <p class="text-white fw-bolder fs-1 text-center number">?</p>
+          </div>
+        </section>
+
+        <div class="row mt-5">
+          <div class="col-md-6 d-flex flex-column">
+            <input type="number" class="p-3 guess" />
+            <button
+              type="button"
+              class="btn btn-primary w-50 m-auto mt-3 checker"
+            >
+              Check!
+            </button>
+          </div>
+          <div class="col-md-6">
+            <p><span class="message">Too low</span></p>
+            <p>
+              Score:
+              <span class="score">20</span>
+            </p>
+            <p>
+              Highcore:
+              <span class="high-score">20</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
