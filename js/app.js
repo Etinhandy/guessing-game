@@ -54,6 +54,8 @@ btnChecker.addEventListener("click", function () {
     if (guess === secretNumber) {
       message.textContent = "Correct!";
       number.textContent = secretNumber;
+      document.querySelector('.back').classList.remove('bg-danger');
+      document.querySelector('.back').classList.add('bg-success');
       if (score > highScore){
         highScore = score
         console.log(highScore, "hellp");
